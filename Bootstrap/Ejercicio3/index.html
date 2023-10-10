@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://fonts.cdnfonts.com/css/skygraze" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1f71f26526.js" crossorigin="anonymous"></script>
+  <title>Ejercicio Dashboard</title>
+  <!--Incluir librerias bootstrap-->
+  <style>
+    .navbar-brand {
+      font-family: 'Skygraze', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">EUROPARTES S.A.</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search"
+      aria-label="Search">
+    <div class="navbar-nav">
+      <div class="nav-item text-nowrap">
+        <a class="nav-link px-3" href="#">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3 sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa fa-address-book" aria-hidden="true"></i>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                Panel Principal
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                Listado de Partes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                Proformas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-bullseye" aria-hidden="true"></i>
+                Facturas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-simplybuilt" aria-hidden="true"></i>
+                Modelos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                Clientes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Proveedores
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-money" aria-hidden="true"></i>
+                Ingresos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                Inventarios
+              </a>
+            </li>
+          </ul>
+
+
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group me-2">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+            </div>
+            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+              <span data-feather="calendar" class="align-text-bottom"></span>
+              This week
+            </button>
+          </div>
+        </div>
+
+
+
+        <h2>Listado de Piezas</h2>
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Pos</th>
+                <th scope="col">N°. Pieza</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Ubicacion</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Precio</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>11</td>
+                <td>163 240 03 17</td>
+                <td>Soporte de Motor ML-320 <br> A | 0</td>
+                <td>01 14 32</td>
+                <td>4.00 <br> Min: 2 <br> Max: 10</td>
+                <td>CS1,000.00</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                <td><i class="fa fa-list" aria-hidden="true"></i></td>
+                <td><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>202 240 36 17</td>
+                <td>Soporte Motor C200 <br> A | 0</td>
+                <td>01 14 32</td>
+                <td>4:00 <br> Min: 2 <br> Max: 10</td>
+                <td>CS3,500.00</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                <td><i class="fa fa-list" aria-hidden="true"></i></td>
+                <td><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>203 240 04 17</td>
+                <td>Soporte Motor C180 igual 02 11 09 <br> A | 0</td>
+                <td>01 25 06A</td>
+                <td>0:00 <br> Min: 0 <br> Max: 4</td>
+                <td>CS3,000.00</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                <td><i class="fa fa-list" aria-hidden="true"></i></td>
+                <td><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>203 240 06 17</td>
+                <td>Soporte Motor 300TD-W210 2032401117<br> A | 0</td>
+                <td>02 11 09</td>
+                <td>0:00 <br> Min: 0 <br> Max: 2</td>
+                <td>CS4,000.00</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                <td><i class="fa fa-list" aria-hidden="true"></i></td>
+                <td><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>204 240 02 17</td>
+                <td>Soporte Motor C220 CDI <br> A | 0</td>
+                <td>03 21 05</td>
+                <td>1:00 <br> Min: 2 <br> Max: 2</td>
+                <td>CS3,500.00</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                <td><i class="fa fa-list" aria-hidden="true"></i></td>
+                <td><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>204 240 09 17</td>
+                <td>Soporte Motor = 4317 <br> A | 0</td>
+                <td>03 21 05B</td>
+                <td>4:00 <br> Min: 0 <br> Max: 1</td>
+                <td>CS2,800.00</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                <td><i class="fa fa-list" aria-hidden="true"></i></td>
+                <td><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>204 240 20 17</td>
+                <td>Soporte Motor M-272 W GLK <br> A | 0</td>
+                <td>04 11 11A</td>
+                <td>2:00 <br> Min: 2 <br> Max: 6</td>
+                <td>CS4,500.00</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                <td><i class="fa fa-list" aria-hidden="true"></i></td>
+                <td><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
